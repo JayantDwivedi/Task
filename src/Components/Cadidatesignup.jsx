@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
 import "./CSS/form.css";
+import { FaSearch } from "react-icons/fa";
+import { MdGroup } from "react-icons/md";
 
 const Candidatesignup = () => {
   const url = "https://jobs-api.squareboat.info/api/v1/auth/register";
@@ -84,14 +86,16 @@ const Candidatesignup = () => {
         <p>
           I am a<sup>*</sup>
         </p>
-        <Link to="/signup" className="btn btn-primary link-btn ">
-          <i className="fas fa-search mx-2"></i>Recruiter
+        <Link to="/signup" className="btn btn-primary link-btn">
+          <FaSearch />
+          Recruiter
         </Link>
         <Link
           to="/candidate-signup"
-          className="btn btn-primary link-btn active"
+          className="btn btn-primary active link-btn"
         >
-          <i className="fas fa-users mx-2"></i>Candidate
+          <MdGroup />
+          Candidate
         </Link>
         <br />
         <label htmlFor="text" className="py-3">

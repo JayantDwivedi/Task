@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./CSS/dash.css";
 import { getToken, isLoggedin } from "../utils/comman";
 import Pagination from "./Pagination";
+import { FaHome } from "react-icons/fa";
 
 export default function Dashboard() {
   const url = "https://jobs-api.squareboat.info/api/v1/jobs";
@@ -54,7 +55,8 @@ export default function Dashboard() {
     <>
       <div className="dash-main container">
         <Link to="/" className="text-light">
-          <i className="fas fa-home px-2"></i>Home
+          <FaHome />
+          Home
         </Link>
         <h4 className="text-light my-4">Job posted</h4>
         <div className="">
