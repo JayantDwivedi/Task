@@ -1,0 +1,38 @@
+.dash-main {
+  position: absolute;
+  top: 20vh;
+  left: 20vh;
+}
+
+.job-card {
+  margin: 1% 2%;
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+}
+.icon {
+  font-size: 10rem;
+  display: block;
+  margin-left: 35%;
+}
+
+@media (max-width: 600px) {
+  .dash-main {
+    position: absolute;
+    top: 20vh;
+    left: 10vh;
+  }
+  .job-card {
+    display: block;
+    width: 60%;
+    height: 50%;
+  }
+  .modal-dialog {
+    width: 60vh;
+  }
+  .icon {
+    font-size: 5rem;
+    display: block;
+    margin-left: 35%;
+  }
+}

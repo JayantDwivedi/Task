@@ -1,0 +1,17 @@
+.dark {
+  background-color: #303f60;
+  width: 100vw;
+  height: 30vh;
+}
+.light {
+  background-color: #edf6ff;
+  width: 100vw;
+  height: 120vh;
+}
+
+@media (max-width: 640px) {
+  .light {
+    background-color: #edf6ff;
+    height: 230vh;
+  }
+}
