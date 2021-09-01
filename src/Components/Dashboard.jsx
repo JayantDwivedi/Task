@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./CSS/dash.css";
 import { getToken, isLoggedin } from "../utils/comman";
 import Pagination from "./Pagination";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Dashboard() {
   const url = "https://jobs-api.squareboat.info/api/v1/jobs";
@@ -70,7 +70,7 @@ export default function Dashboard() {
                 <p>{ele.description}</p>
                 <div className="d-flex justify-content-between">
                   <p className="">
-                    <i className="fas fa-map-marker-alt text-primary px-1"> </i>
+                    <FaMapMarkerAlt />
                     {ele.location}
                   </p>
 
